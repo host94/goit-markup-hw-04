@@ -159,7 +159,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .effective-title {
   font-size: 56px;
@@ -204,10 +205,7 @@ body {
   display: flex;
   gap: 24px;
 }
-.list {
-}
 .strategy-item {
-  min-width: 264px;
 }
 .strategy-title {
   font-weight: 500;
@@ -217,15 +215,20 @@ body {
   color: var(--title-color);
   margin-bottom: 8px;
 }
-.strategy-item-wrap {
-}
-.strategy-icon-list {
+.strategy-wrap {
+  height: 112px;
   display: flex;
   justify-content: center;
-  gap: 24px;
+  align-items: center;
+  margin-bottom: 8px;
+  background: #f4f4fd;
+  border-radius: 4px;
+}
+.strategy-icon {
+  display: block;
+  justify-content: center;
 }
 .strategy-icon-item {
-  width: 265px;
   height: 112px;
   background: #f4f4fd;
   border-radius: 4px;
@@ -234,6 +237,7 @@ body {
   justify-content: center;
   margin-bottom: 8px;
 }
+
 .strategy-text {
   font-size: 16px;
   line-height: 1.5;
@@ -280,7 +284,8 @@ body {
 .team-item {
   background-color: var(--baground-color-main);
   flex-basis: calc((100% - 72px) / 4);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
 .team-card-text {
@@ -323,8 +328,8 @@ body {
   justify-content: center;
 }
 .team-soc-link:hover,
-.team-soc.link:focus{
-  background: #404BBF;
+.team-soc.link:focus {
+  background: #404bbf;
 }
 .team-soc-icon {
   fill: #f4f4fd;
@@ -348,7 +353,7 @@ body {
   gap: 24px;
 }
 .customers-item {
-  width: 168px;
+  width: calc((100% - 120px) / 6);
   height: 88px;
 }
 .customers-link {
@@ -417,7 +422,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
 }
 .footer-soc-item {
   width: 40px;
@@ -472,15 +477,11 @@ body {
 }
 .filter-btn:hover,
 .filter-btn:focus {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.04em;
   color: var(--main-color);
   background-color: var(--hover-color-style);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+  border-color: var(--hover-color-style);
 }
 .portfolio-list {
   display: flex;
@@ -495,7 +496,6 @@ body {
 }
 .portfolio-link:hover,
 .portfolio-link:focus {
-  border: 1px solid #f4f4fd;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
